@@ -1,6 +1,35 @@
-body {
+html {
+    text-align: center;
     background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
 }
-.clock{
-    
+
+.clock {
+    width: 10rem;
+    height: 10rem;
+    border: 10px solid whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10rem;
+    padding: 1rem;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform: translate(-3px); */
+}
+
+.hand {
+    width: 50%;
+    height: 7px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function:cubic-bezier(0, 2.43, 0.47, 0.35);
 }
